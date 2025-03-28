@@ -174,11 +174,10 @@
         countLoveTime()
         function openModal() {
             document.getElementById("letterModal").style.display = "block";
-            let text = `Hôm nay là ngày 28-03-2025 ngày em phải rời xa quê hương mình để đến một vùng đất mới để thực hiện giấc mơ của cả đời mình. Anh cũng buồn khi không thể đồng hành cùng em trong chuyến hành trình khó khăn này. Mong dù sau này có chuyện gì xảy ra mong em luôn tin rằng luôn có một người luôn âm thầm theo dõi em trên chuyến hành trình này 🤍\n\nAnh viết bức thư này này để em biết em không tủi thân trên chuyến hành trình này. Chúc mew vững bước trên con đường mình đã chọn và trở về trên con đường thành công. Sau này trở về anh hi vọng mình sẽ là người nắm tay em đi nốt chặn đường còn lại. Khi nào em cảm thấy buồn chán có thể vào đây xem thời gian trôi qua mình đã làm được những điều tuyệt vời.\n\nAnh chỉ là một người trên mạng nhưng mong sau này em có thể dành một vị trí nhỏ trong trái tim nhỏ bé của mình cho anh.\n\nAnh cảm ơn bé đã đọc ạ...`;
+            let text = `𝓖ử𝓲 𝓮𝓶...❣️\n\nHôm nay là ngày 28-03-2025, ngày em rời xa quê hương mình để đến một vùng đất mới để thực hiện giấc mơ của cả đời mình. Anh cũng buồn khi không thể đồng hành cùng em trong chuyến hành trình khó khăn này. Mong dù sau này có chuyện gì xảy ra mong em luôn tin rằng luôn có một người luôn âm thầm dõi theo bước chân của em trên chuyến hành trình này 🤍\n\nAnh viết bức thư này để em không cảm thấy tủi thân trên chuyến hành trình này. Chúc mew vững bước trên con đường mình đã chọn và trở về trên con đường thành công. Sau này trở về anh hi vọng mình sẽ là người nắm tay em đi nốt chặn đường còn lại. Khi nào em cảm thấy buồn chán có thể vào đây xem thời gian trôi qua mình đã làm được những điều tuyệt vời.\n\nAnh chỉ là một người trên mạng nhưng mong sau này em có thể dành một vị trí nhỏ trong trái tim nhỏ bé của mình cho anh.\n\nAnh cảm ơn bé đã đọc ạ...`;
             let letterText = document.getElementById("letterText");
             letterText.innerHTML = "";
             let index = 0;
-
             function typeLetter() {
                 if (index < text.length) {
                     letterText.innerHTML += text.charAt(index);
@@ -189,6 +188,7 @@
                 }
             }
             typeLetter();
+
         }
 
         function createHeart() {
