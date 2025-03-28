@@ -151,15 +151,21 @@
             let diff = now - startDate;
 
             let years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-            diff %= (1000 * 60 * 60 * 24 * 365);
+            diff -= years * (1000 * 60 * 60 * 24 * 365);
+
             let months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
-            diff %= (1000 * 60 * 60 * 24 * 30);
+            diff -= months * (1000 * 60 * 60 * 24 * 30);
+
             let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            diff %= (1000 * 60 * 60 * 24);
+            diff -= days * (1000 * 60 * 60 * 24);
+
             let hours = Math.floor(diff / (1000 * 60 * 60));
-            diff %= (1000 * 60 * 60);
+            diff -= hours * (1000 * 60 * 60);
+
             let minutes = Math.floor(diff / (1000 * 60));
-            let seconds = Math.floor(diff % 60);
+            diff -= minutes * (1000 * 60);
+
+            let seconds = Math.floor(diff / 1000);
 
             document.getElementById("timer").innerHTML =
                 `${years} năm, ${months} tháng, ${days} ngày, ${hours} giờ, ${minutes} phút, ${seconds} giây`;
